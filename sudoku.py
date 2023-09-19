@@ -1,6 +1,3 @@
-# pylint: disable=missing-docstring
-# $DELETE_BEGIN
-"""Sudoku solver"""
 # This implementation is for a 9x9 grid
 LEN_GRID = 9
 def sudoku_validator(grid):
@@ -76,10 +73,9 @@ def solve(grid):
                 return True
             grid[row][col] = 0
     return False
-# $DELETE_END
+
 def sudoku_solver(grid):
     """Sudoku solver"""
-    # $CHALLENGIFY_BEGIN
     if not isinstance(grid, list):
         return 'invalid grid'
 
@@ -93,4 +89,3 @@ def sudoku_solver(grid):
 
     solve(grid)
     return grid
-  # $CHALLENGIFY_END
